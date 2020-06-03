@@ -38,7 +38,7 @@ const Home = () => (
             </span>
           </SearchItem>
         </List>
-        <Button bgColor="transparent" borderColor="#dcdc09" color="#dcdc09" type="button">Vender meu carro</Button>
+        <Button type="submit" variant="outlined" color="secondary">Vender meu carro</Button>
       </Wrapper>
       <div style={{ background: '#fff' }}>
         <Form>
@@ -91,7 +91,9 @@ const Home = () => (
               </Field>
             </FieldGroup>
           </fieldset>
-          <Button type="submit">VER OFERTAS</Button>
+          <div style={{ width: '100%', display: 'flex', flexDirection: 'row-reverse' }}>
+            <Button type="submit" variant="contained" color="primary" size="big" style={{ margin: '0 2% 2% 0' }}>VER OFERTAS</Button>
+          </div>
         </Form>
       </div>
     </Box>

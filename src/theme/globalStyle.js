@@ -4,10 +4,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: #e3e3e3;
+    background: #eaeaea;
     font-family: Roboto;
   }
-  
+
 
 `;
 

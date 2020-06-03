@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const SearchItem = styled.li`
   color: gray;
-  width: 15%;
+  width: 11%;
   border-bottom: 4px solid;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@ const SearchItem = styled.li`
   padding-bottom: 1%;
   padding-right: 2%;
   cursor: pointer;
-  
+
   > svg {
     margin-right: 12%;
   }
