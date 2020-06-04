@@ -20,8 +20,14 @@ const button = {
   },
 };
 
+const colors = {
+  gray_01: '#464646',
+  gray_02: '#777777',
+};
+
 const theme = {
   button,
+  colors,
 };
 
 export default theme;

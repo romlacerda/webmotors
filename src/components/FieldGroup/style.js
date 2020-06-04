@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const Field = styled.div`
+const FieldGroup = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: ${(props) => (props.content ? props.content : '')};
   margin: 1% 0;
 `;
 
-export default Field;
+export default FieldGroup;

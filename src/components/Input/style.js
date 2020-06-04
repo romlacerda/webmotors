@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
-const Input = styled.input`
+export const InputText = styled.input`
   height: 40px;
   padding: 0 10px;
   width: ${(props) => (props.type === 'text' ? '100%' : '')};
 `;
 
-/* color: ${({ theme, variant }) => (variant !== undefined ? theme.input[variant].color : '')}; */
 
-export default Input;
+export const InputCheckbox = styled.input.attrs({ type: 'checkbox' })`
+  height: 40px;
+  padding: 0 10px;
+`;
+
+
+/* color: ${({ theme, variant }) => (variant !== undefined ? theme.input[variant].color : '')}; */
