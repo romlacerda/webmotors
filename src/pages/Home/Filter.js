@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaMotorcycle, FaCar } from 'react-icons/fa';
 import { GrLocation } from 'react-icons/gr';
+import PropTypes from 'prop-types';
 import Box from '../../components/Box/style';
 import Wrapper from '../../components/Wrapper/style';
 import List from '../../components/List/style';
@@ -214,6 +215,11 @@ const Filter = ({ setVehicles }) => {
       </div>
     </Box>
   );
+};
+
+
+Filter.propTypes = {
+  setVehicles: PropTypes.func.isRequired,
 };
 
 export default Filter;
