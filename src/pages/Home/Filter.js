@@ -12,14 +12,12 @@ import Form from '../../components/Form/style';
 import Button from '../../components/Button/style';
 import SearchItem from '../../components/SearchItem/style';
 import api from '../../services/api';
-import Row from '../../components/Row/style';
 import ButtonContainer from '../../components/ButtonContainer/style';
 
-const Filter = () => {
+const Filter = ({ setVehicles }) => {
   const [makes, setMakes] = useState([]);
   const [models, setModels] = useState([]);
   const [versions, setVersions] = useState([]);
-  const [vehicles, setVehicles] = useState([]);
 
   const [selectedMake, setSelectedMake] = useState('');
   const [selectedModel, setSelectedModel] = useState('');
@@ -83,7 +81,7 @@ const Filter = () => {
         page: 1,
       },
     }).then((response) => {
-      console.log(response.data);
+      setVehicles(response.data);
     });
   }
 

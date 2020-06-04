@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import device from '../../theme/device';
 
 const ButtonContainer = styled.div`
-  margin: 2.5%;
+  margin: 0 2.5% 1.5% 0;
   /* width: 100%; */
   display: flex;
   flex-flow: row-reverse;
