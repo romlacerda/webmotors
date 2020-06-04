@@ -15,6 +15,15 @@ const VehicleCardStyle = styled.div`
   & h4, h6 {
     margin: 0;
   }
+
+  & h6 {
+    font-size: 0.5em;
+  }
+  & h4 {
+    color: #f3123c;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
   & div {
     margin-top: 15%;
     margin-left: 10%;
