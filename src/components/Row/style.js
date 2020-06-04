@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-const Box = styled.div`
-  height: 200px;
+const Row = styled.div`
   width: 100%;
-  max-width: 933px;
-  max-height: 313px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+ 
 `;
 
-export default Box;
+export default Row;

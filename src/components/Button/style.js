@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import device from '../../theme/device';
 
 const Button = styled.button`
   font-weight: bold;
-  height: ${(props) => (props.theme.button.size[props.size] === undefined ? '40px' : props.theme.button.size[props.size])};
-  width: 30%;
+  height: 45px;
+  width: ${(props) => (props.size === 'big' ? '30%' : '15%')};
   outline: none;
   background-color: ${(props) => props.theme.button.variant[props.variant].backgroundColor};
   border: ${(props) => props.theme.button.variant[props.variant].border};
@@ -14,6 +15,14 @@ const Button = styled.button`
   &:hover {
     background-color: ${(props) => (props.variant === 'contained' ? '#b70a2b' : '')};
   }
+
+  @media ${device.tablet} {
+    width: 100%;
+    display: ${(props) => (props.sell ? 'none' : 'block')};
+    margin: 2% 0;
+  }
+
+
 `;
   /* color: ${({ theme, variant }) => (variant !== undefined ? theme.input[variant].color : '')}; */
 

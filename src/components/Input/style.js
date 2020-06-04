@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const InputText = styled.input`
-  height: 40px;
+  height: 42px;
   padding: 0 10px;
-  width: ${(props) => (props.type === 'text' ? '100%' : '')};
+  width: 100%;
+  padding-left: ${(props) => (props.name === 'location' ? '75px' : '0')}
 `;
 
 

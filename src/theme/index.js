@@ -9,11 +9,14 @@ const button = {
       backgroundColor: 'transparent',
       border: '3px solid orange',
     },
+    alternative: {
+      backgroundColor: '#a5a5a5',
+      border: '0',
+    },
   },
   color: {
     primary: '#fff',
     secondary: 'orange',
-
   },
   size: {
     big: '45px',
